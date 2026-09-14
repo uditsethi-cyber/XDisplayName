@@ -52,14 +52,14 @@ function App() {
           />
         </span>
         <button type="submit">Submit</button>
-        {payload?.firstName && payload?.lastName && (
-          <p>
-            <strong>
-              Full Name: {payload.firstName} {payload.lastName}
-            </strong>
-          </p>
-        )}
       </form>
+      {payload?.firstName && payload?.lastName && (
+        <p>
+          <strong>
+            Full Name: {payload.firstName} {payload.lastName}
+          </strong>
+        </p>
+      )}
     </>
   );
 }
